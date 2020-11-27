@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: deploy_blog
 
 # Controls when the action will run. 
 on:
@@ -43,5 +43,5 @@ jobs:
 
       - name: Build the website and upload to S3
         run: |
-          hugo
+          hugo --minify -t hugo-PaperMod
           aws s3 sync public s3://test-blog.de/
