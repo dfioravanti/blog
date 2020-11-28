@@ -1,4 +1,4 @@
-baseURL = "http://test-blog.de.s3-website.eu-central-1.amazonaws.com/"
+baseURL = "https://test-blog.de.s3.amazonaws.com/"
 languageCode = "en-us"
 title = "Figure out a name"
 theme = "hugo-PaperMod"
