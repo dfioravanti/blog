@@ -1,3 +1,3 @@
 locals {
-  domain_name = "test-blog.de"
+  domain_name = "dfioravanti.com"
 }
