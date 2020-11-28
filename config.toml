@@ -1,4 +1,4 @@
-baseURL = "https://test-blog.de.s3.amazonaws.com/"
+baseURL = "https://www.dfioravanti.com/"
 languageCode = "en-us"
-title = "Figure out a name"
+title = "Blog"
 theme = "hugo-PaperMod"
