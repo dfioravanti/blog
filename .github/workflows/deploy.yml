@@ -45,3 +45,6 @@ jobs:
         run: |
           hugo --minify -t hugo-PaperMod
           aws s3 sync public s3://dfioravanti.com/
+
+      - name: Invalidate cloudfront cache
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/*" 
