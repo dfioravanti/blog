@@ -2,7 +2,6 @@
 title: "How this website was built"
 date: 2020-12-04T06:54:35+01:00
 author: Diego
-draft: false
 ShowToc: true
 Tags: 
     - Hugo
@@ -12,9 +11,9 @@ categories:
     - Blog
 ---
 
-In this first post I want to summarize how and why I created this website, some technical and personal requirements that draw my decisions.
+In this post I want to summarize how and why I created this website and requirements that draw my decisions.
 Most of this is highly opinionated so feel free to disagree and to point out any mistakes.
-Throughout this write up I will link to the resources on my Github page as: 
+Throughout this write up I will link to the resources on my Github pages as: 
 
 1. "Talk is cheap. Show me the code." - Linus Torvalds 
 2. I do not want to have to update this page each time I make a small change to something.
@@ -24,10 +23,10 @@ Moreover, there are a million guides out there on how to set up the various tool
 
 While thinking how to build this I have these basic ideas into my mind
 
-1. Time is finite, work smart not hard
+1. Time is finite. Work smart not hard
 2. I am not a frontend person
 3. Minimal maintenance
-4. No cookies, no tracking, no analytics. I do not want to deal with GDPR, etc.
+4. No cookies, no tracking, no analytics. I do not want to deal with GDPR, etc
 5. I want to improve my technical skills while doing this. In particular about AWS/terraform
 6. Based on open source stack as much as possible
 7. As cheap as possible
@@ -40,7 +39,9 @@ From these considerations I came up with the following list of requirements
    * The infrastructure should be defined via terraform
    * No logs or cookies whatsoever
 
-Combining all these reasons and after some googling I decided to go for a website built with [Hugo](https://gohugo.io) deployed in a private S3 bucket with CloudFront distributing the content. 
+Combining all these reasons and after some googling I decided to build the website with [Hugo](https://gohugo.io)
+and to deploy it in a private [S3 bucket](https://aws.amazon.com/s3/?nc1=h_ls) with [Cl0oudFront](https://aws.amazon.com/cloudfront/?nc1=h_ls)
+distributing the content. 
 
 # Basic workflow
 
@@ -63,7 +64,9 @@ The code for this blog and the infrastructure behind it is hosted on my github
 
 # Development
 
-Developing this website was relatively straight forward. Both Hugo and terraform have excellent tutorials out there. I used the following resources
+Developing this website was relatively straightforward.
+Both Hugo and terraform have excellent tutorials out there.
+I used the following resources
 
 * [Hugo own tutorial](https://gohugo.io/getting-started/quick-start/): easy and clear tutorial to understand the very basic of Hugo
 * [Hugo and AWS](https://lustforge.com/2016/02/27/hosting-hugo-on-aws/): it is a bit out of date but it put me on the right direction
