@@ -15,7 +15,7 @@ languages:
         - name: Archive
           url: archive/
           weight: 5
-        - name: About
+        - name: About me
           url: about/
           weight: 6
         - name: Tags
@@ -32,7 +32,7 @@ taxonomies:
 
 params:
     env: production
-    ShowReadingTime: true
+    ShowReadingTime: false
     TocOpen: false
     ShowToc: true
     profileMode:
@@ -45,7 +45,7 @@ params:
         buttons:
             - name: Archive
               url: "/archive"
-            - name: About
+            - name: About me
               url: "/about"
 
     socialIcons: # optional
