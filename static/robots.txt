@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /impressum
+
+Sitemap: https://www.dfioravanti.com/sitemap.xml

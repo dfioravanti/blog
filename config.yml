@@ -4,7 +4,7 @@ title: Diego Fioravanti
 theme: hugo-PaperMod
 canonifyURLs: true
 copyright: Diego Fioravanti
-enableRobotsTXT: true
+enableRobotsTXT: false
 
 languages:
   en:
