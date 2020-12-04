@@ -23,7 +23,38 @@ languages:
           weight: 7
         - name: Impressum
           url: impressum/
+          weight: 8
 
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+params:
+    env: production
+    ShowReadingTime: true
+    TocOpen: false
+    ShowToc: true
+    profileMode:
+        enabled: true
+        title: "Diego Fioravanti" # optional default will be site title
+        imageUrl: "me.jpg" # optional
+        imageTitle: "Diego Fioravanti" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+            - name: Archive
+              url: "/archive"
+            - name: About
+              url: "/about"
+
+    socialIcons: # optional
+        - name: "LinkedIn"
+          url: "https://www.linkedin.com/in/dfioravanti/"
+        - name: "GitHub"
+          url: "https://github.com/dfioravanti"
+        - name: "email"
+          url: "mailto:fioravanti.diego@gmail.com"
 
 # Disable everything so no cookie is needed
 privacy:
